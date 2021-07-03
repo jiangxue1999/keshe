@@ -1,0 +1,13 @@
+<view class="input">
+  <text class="input-placeholder">{{placeholderValue}}</text>
+  <input 
+    class="input-text" 
+    placeholder="" 
+    value="{{inputValue}}" 
+    maxlength="{{maxLength}}" 
+    bindinput="onInput"
+    cursor-spacing="{{cursorSpacing}}"
+    password="{{isPassword}}"
+    focus="{{autoFocus}}"
+  />
+</view>

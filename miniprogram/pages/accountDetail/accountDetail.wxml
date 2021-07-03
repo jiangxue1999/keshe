@@ -1,0 +1,35 @@
+<header>
+  <view class="header" slot="content">
+    <navigator open-type="navigateBack">
+      <image class="header-img" src="./../../images/back2.png" />
+    </navigator>
+    <text class="header-title">详情</text>
+  </view>
+</header>
+
+<view class="card animated fadeIn">
+  <text class="card-header__title over-ellipsis">{{title}}</text>
+  <view class="card-main__user" catchtap="onCopy" data-copy-value="{{account}}">
+    <text class="user-title over-ellipsis">{{userKey}}：</text>
+    <text selectable="{{true}}" class="user-text over-ellipsis">{{account}}</text>
+  </view>
+  <view class="card-main__password" catchtap="onTapPwd" data-j="{{jPassword?true:false}}">
+    <text class="password-title">密码：</text>
+    <text selectable="{{true}}" class="password-text over-ellipsis">{{jPassword?jPassword:'●●●●●●●●●●●●●'}}</text>
+    <image class="card-header__show" src="./../../images/list-show.png" />
+  </view>
+
+  <view class="card-footer">
+    <text class="card-footer__time">更新时间：{{updateTime}}</text>
+    <text class="card-footer__number">查看：{{times}}</text>
+  </view>
+
+</view>
+
+<view class="card-btns">
+  <text catchtap="onDelete">删 除</text>
+  <text catchtap="onUpdate">修 改</text>
+</view>
+
+
+<validatePwd show="{{validatePwdShow}}" bind:validateSuccess="validateSuccess"></validatePwd>

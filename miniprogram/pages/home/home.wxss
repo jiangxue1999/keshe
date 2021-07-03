@@ -1,0 +1,141 @@
+page {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header-avatar {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 32rpx;
+  overflow: hidden;
+  margin-left: 32rpx;
+  margin-right: 32rpx;
+}
+
+.header-nick {
+  font-weight: 700;
+  color: var(--main-fontColor);
+  font-size: var(--main-fontSize);
+  width: 410rpx;
+  letter-spacing: 3rpx;
+}
+
+.logo {
+  width: 400rpx;
+  height: 400rpx;
+  margin: 100rpx auto 100rpx auto;
+  display: block;
+}
+
+.search {
+  display: flex;
+  position: relative;
+  width: 580rpx;
+  height: 80rpx;
+  border-radius: 50rpx;
+  border: 4rpx solid rgba(97, 184, 235);
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.search-text {
+  height: 80rpx;
+  width: 420rpx;
+  line-height: 80rpx;
+  font-size: var(--main-fontSize);
+  padding-left: 37rpx;
+  border: 0;
+  outline: none;
+}
+
+.search-text__search-text {
+  font-size: var(--main-fontSize);
+  font-weight:500;
+  color:rgba(153,153,153,1);
+}
+
+.search-button {
+  width:80rpx;
+  height:80rpx;
+  background: linear-gradient(90deg,rgb(97, 184, 235) 0%,rgb(97, 184, 235) 100%);
+  border-radius: 0 50rpx 50rpx 0;
+  display: flex;
+  align-items: center;
+}
+
+.search-button__img {
+  width: 35rpx;
+  height: 36rpx;
+  margin-left: 14rpx;
+}
+
+.search-button__img:active {
+  transform: scale(1.1);
+}
+
+.btns {
+  position: relative;
+  top: 6vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 210rpx;
+}
+
+.btns > view {
+  display: flex;
+  width: 300rpx;
+  height: 80rpx;
+  border-radius: 50rpx;
+  align-items: center;
+  padding-left: 24rpx;
+  margin-bottom: 48rpx;
+}
+
+.btns > view text {
+  font-size: 35rpx;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 110rpx;
+}
+
+.btn-add {
+  background: linear-gradient(90deg,#89f7fe 0%,#66a6ff 100%);
+}
+
+.btns > view text:active {  
+  color: #eeeeee;
+  transform: scale(1.05);
+}
+
+
+.btn-select{
+  background: linear-gradient(90deg,#fad0c4 0%,#ff9a9e 100%);
+}
+
+.btn-setting {
+  background: linear-gradient(90deg,#ff7eb3 0%,#ff758c 100%);
+}
+
+.btn-add__img {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.btn-select__img {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.btn-setting__img {
+  width: 50rpx;
+  height: 50rpx;
+}

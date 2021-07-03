@@ -1,0 +1,25 @@
+<header>
+  <view class="header" slot="content">
+  <navigator open-type="navigateBack">
+    <image class="close" src="./../../images/back.png"/>
+  </navigator>
+  </view>
+</header>
+
+<view>
+  <text class="title">您好</text>
+  <text class="title">请设置您的PIN码</text>
+</view>
+
+<view class="pwd-box">
+  <x-input cursorSpacing="0" maxLength="16" placeholder="请输入" bind:inputChange="onPwdChange"></x-input>
+  <x-input cursorSpacing="0" maxLength="16" placeholder="再次确认" bind:inputChange="onPwd2Change"></x-input>
+</view>
+
+<checkbox-group class="checkbox-group" bindchange="onChange">
+  <label class="checkbox">
+    <checkbox value="know" checked="{{checked}}"/>已了解【PIN码仅在本地缓存】
+  </label>
+</checkbox-group>
+
+<button class="btn" catchtap="onSubmit">确 定</button>

@@ -1,0 +1,21 @@
+<header>
+  <view class="header" slot="content">
+    <navigator open-type="navigateBack">
+      <image class="header-img" src="./../../images/back2.png" />
+    </navigator>
+    <text class="header-title">功能设置</text>
+  </view>
+</header>
+
+<view class="card">
+  <view class="card-line">
+    <image class="line-icon" style="height:30rpx;" src="./../../images/mine-share.png" />
+    <button open-type="share" class="line-btn" hover-class="btn-hover">分享给好友</button>
+    <image class="line-right" src="./../../images/mine-right.png" />
+  </view>
+  <view class="card-line" catchtap="clearAccount">
+    <image class="line-icon" src="./../../images/mine-clear.png" />
+    <button class="line-btn" hover-class="btn-hover" >清空账号数据</button>
+    <image class="line-right" src="./../../images/mine-right.png" />
+  </view>
+</view>

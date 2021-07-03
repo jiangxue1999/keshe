@@ -1,0 +1,11 @@
+
+page {
+  --main-fontColor: #333333;
+  --main-fontSize: 34rpx;
+}
+
+.over-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
